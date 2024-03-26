@@ -80,17 +80,4 @@ class ContactController extends Controller
             ->with('success', 'Contact deleted successfully.');
     }
 
-    public function search(Request $request)
-    {
-        $search = $request->get('search');
-        $contacts = Contact::where('user_id', Auth::id())
-                            ->where(function($query) use ($search) {
-                                $query->where('name', 'like', '%' . $search . '%')
-                                    ->orWhere('phone', 'like', '%' . $search . '%');
-                            })
-                            ->paginate(10);
-
-        return view('contacts.index', compact('contacts', 'search'));
-    }
-
 }

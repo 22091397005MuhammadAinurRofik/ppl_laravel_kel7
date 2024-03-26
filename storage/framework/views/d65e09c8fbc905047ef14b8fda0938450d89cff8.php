@@ -34,6 +34,7 @@
                         <div class="mb-3">
                             <div class="d-grid">
                                 <button class="btn btn-primary">Login</button>
+                                <a href="<?php echo e(route('register')); ?>" class="text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
                             </div>
                         </div>
                     </form>

@@ -37,6 +37,7 @@
                         <div class="mb-3">
                             <div class="d-grid">
                                 <button class="btn btn-primary">Register</button>
+                                <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
                             </div>
                         </div>
                     </form>

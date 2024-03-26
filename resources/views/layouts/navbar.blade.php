@@ -152,7 +152,7 @@
     </div>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/home" class="nav-link">Home</a></li>
         <li><a href="{{ route('contacts.index') }}" class="nav-link">Contact</a></li>
         <li><a href="{{ route('addresses.index') }}" class="nav-link">Address</a></li>
         <li><a href="{{ route('profile') }}" class="nav-link">Profile</a></li>
